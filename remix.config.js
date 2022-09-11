@@ -15,14 +15,14 @@ module.exports = {
     return defineRoutes((route) => {
       if (process.env.NODE_ENV === "production") return;
 
-      console.log("⚠️  Test routes enabled.");
+      // console.log("⚠️  Test routes enabled.");
 
-      let appDir = path.join(__dirname, "app");
+      // let appDir = path.join(__dirname, "app");
 
-      route(
-        "__tests/create-user",
-        path.relative(appDir, "cypress/support/test-routes/create-user.ts")
-      );
+      // route(
+      //   "__tests/create-user",
+      //   path.relative(appDir, "cypress/support/test-routes/create-user.ts")
+      // );
     });
   },
 };
